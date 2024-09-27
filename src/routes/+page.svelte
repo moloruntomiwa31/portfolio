@@ -4,7 +4,12 @@
   import ProjectCard from "../components/ProjectCard.svelte";
   import CustomInput from "../components/CustomInput.svelte";
   import CustomLabel from "../components/CustomLabel.svelte";
+  import ogImage from "../../static/ogImage.png";
   import Icon from "@iconify/svelte";
+
+  const title = "Aderibigbe Michael O.";
+  const description =
+    "Innovative Frontend Developer with expertise in Vue.js. Enhancing user experiences and optimizing web performance. Skilled in developing responsive designs and resolving complex code issues. Implemented cutting-edge solutions, demonstrating technical proficiency and problem-solving abilities.";
 
   const skillBadges = [
     "Vue.js",
@@ -57,13 +62,7 @@
       title: "Devlinks",
       description:
         "A profile-building app for developers to create and preview custom profiles. Shareable links enable easy sharing with others.",
-      skillSets: [
-        "Nuxt 3",
-        "Typescript",
-        "Firebase",
-        "Pinia",
-        "TailwindCSS",
-      ],
+      skillSets: ["Nuxt 3", "Typescript", "Firebase", "Pinia", "TailwindCSS"],
       urlPath: "https://devlinks-31.vercel.app/",
     },
     {
@@ -71,13 +70,7 @@
       title: "Kanban Task Manager",
       description:
         "A task manager app for organizing tasks into boards with customizable columns where tasks can have description, subtasks.",
-      skillSets: [
-        "Vue 3",
-        "Typescript",
-        "Firebase",
-        "Pinia",
-        "TailwindCSS",
-      ],
+      skillSets: ["Vue 3", "Typescript", "Firebase", "Pinia", "TailwindCSS"],
       urlPath: "https://kanban-task-manager-31.vercel.app/",
     },
     {
@@ -112,12 +105,24 @@
   let messageInput = "";
 </script>
 
-<section id="about" class="space-y-8">
-  <div class="detail p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content={ogImage} />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+</svelte:head>
+
+<section id="about" class="space-y-8 section-container">
+  <div class="section-header p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">About</h2>
   </div>
-  <div class="p-4 lg:p-0 space-y-8">
-    <p class="text-base">
+  <div class="p-4 lg:p-0 space-y-8 section-content">
+    <p class="text-base text-[#888]">
       Innovative Frontend Developer with expertise in Vue.js. Enhancing user
       experiences and optimizing web performance. Skilled in developing
       responsive designs and resolving complex code issues. Implemented
@@ -137,44 +142,48 @@
   </div>
 </section>
 
-<section id="experience" class="space-y-8">
-  <div class="detail p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
+<section id="experience" class="space-y-8 section-container">
+  <div class="section-header p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">Experience</h2>
   </div>
-  {#each experiences as experience}
-    <!-- content here -->
-    <a href={experience.path} target="_blank">
-      <Card content={experience} />
-    </a>
-  {/each}
-  <div class="resume flex items-center px-4 group">
-    <h3 class="font-bold whitespace-nowrap text-sm">View Full Resume</h3>
-    <Icon
-      icon="tabler:arrow-up-right"
-      class="text-white transition-transform transform group-hover:translate-y-[-3px] group-hover:translate-x-[3px]"
-      width="1.4rem"
-      height="1.4rem"
-    />
+  <div class="section-content">
+    {#each experiences as experience}
+      <!-- content here -->
+      <a href={experience.path} target="_blank">
+        <Card content={experience} />
+      </a>
+    {/each}
+    <div class="resume flex items-center px-4 group">
+      <h3 class="font-bold whitespace-nowrap text-sm">View Full Resume</h3>
+      <Icon
+        icon="tabler:arrow-up-right"
+        class="text-white transition-transform transform group-hover:translate-y-[-3px] group-hover:translate-x-[3px]"
+        width="1.4rem"
+        height="1.4rem"
+      />
+    </div>
   </div>
 </section>
 
-<section id="project">
-  <div class="detail p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
+<section id="project" class="section-container">
+  <div class="section-header p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">Project</h2>
   </div>
-  {#each projects as project}
-    <!-- content here -->
-    <a href={project.urlPath} target="_blank">
-      <ProjectCard content={project} />
-    </a>
-  {/each}
+  <div class="section-content">
+    {#each projects as project}
+      <!-- content here -->
+      <a href={project.urlPath} target="_blank">
+        <ProjectCard content={project} />
+      </a>
+    {/each}
+  </div>
 </section>
 
-<section id="contact">
-  <div class="detail p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
+<section id="contact" class="section-container">
+  <div class="section-header p-4 bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">Contact</h2>
   </div>
-  <form class="p-4 space-y-8">
+  <form class="p-4 space-y-8 section-content">
     <div class="space-y-2">
       <CustomLabel content="Full Name" usage="name" />
       <CustomInput
@@ -217,3 +226,21 @@
     >
   </form>
 </section>
+
+<style>
+  @media (max-width: 668px) {
+    .section-container {
+      position: relative;
+    }
+
+    .section-header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      transition: opacity 0.3s ease;
+    }
+    .section-content {
+      position: relative;
+    }
+  }
+</style>

@@ -97,7 +97,7 @@
           height="20"
         />
       </h3>
-      <p class="text-white text-sm font-light">
+      <p class="text-[#888] text-sm font-light">
         Passionate web developer with <span class="font-bold">1+</span> year of experience
         to build all aspects of the user experience and interface for client-facing
         landing pages and websites.
