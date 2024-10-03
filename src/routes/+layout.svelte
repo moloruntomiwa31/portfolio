@@ -57,7 +57,7 @@
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     document.querySelectorAll("section[id]").forEach((section) => {
@@ -107,11 +107,15 @@
       {#each pageLinks as link}
         <a
           href={link.tag}
-          class="uppercase hover:text-neutral-300 transition duration-200 {activeSection ===
+          class="group relative pl-8 uppercase transition-all duration-300 {activeSection ===
           link.tag.slice(1)
             ? 'font-extrabold text-white'
-            : 'font-medium text-neutral-400 '}"
+            : 'font-medium text-neutral-400'}"
         >
+          <span
+            class="absolute left-0 top-1/2 -translate-y-1/2 h-[2px] rounded-md bg-neutral-400 transition-all duration-300 group-hover:w-6
+          {activeSection === link.tag.slice(1) ? 'w-6 bg-white' : 'w-4'}"
+          ></span>
           {link.name}
         </a>
       {/each}
@@ -133,5 +137,11 @@
     class="lg:w-3/5 h-full space-y-12 lg:overflow-y-auto custom-scrollbar lg:px-4 xl:px-8 md:p-0 text-white"
   >
     <slot />
+    <div class="mx-auto w-full p-4">
+      <p class="text-[#888] text-sm font-light">
+        Built with <span class="font-bold">SvelteKit</span> &
+        <span class="font-bold">TailwindCSS</span>😊❤️
+      </p>
+    </div>
   </div>
 </main>

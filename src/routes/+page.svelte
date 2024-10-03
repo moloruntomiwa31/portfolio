@@ -154,7 +154,11 @@
       </a>
     {/each}
     <div class="resume flex items-center px-4 group">
-      <h3 class="font-bold whitespace-nowrap text-sm">View Full Resume</h3>
+      <a
+        href={import.meta.env.VITE_RESUME_LINK}
+        target="_blank"
+        class="font-bold whitespace-nowrap text-sm">View Full Resume</a
+      >
       <Icon
         icon="tabler:arrow-up-right"
         class="text-white transition-transform transform group-hover:translate-y-[-3px] group-hover:translate-x-[3px]"
