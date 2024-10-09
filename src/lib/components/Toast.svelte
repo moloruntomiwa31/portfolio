@@ -1,6 +1,6 @@
 <script>
     import { onDestroy } from "svelte";
-    import { toast } from "$lib/stores/store";
+    import { toast } from "$lib/stores/toast";
     import { fly } from "svelte/transition";
     import Icon from "@iconify/svelte";
   
