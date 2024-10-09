@@ -5,8 +5,8 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: rgba(0, 0, 0, 0.95);
   scroll-behavior: smooth;
+  @apply dark:bg-[#000000f2] bg-neutral-100
 }
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
