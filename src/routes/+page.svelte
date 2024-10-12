@@ -113,7 +113,7 @@
 </svelte:head>
 
 <section id="about" class="space-y-8 section-container">
-  <div class="section-header p-4 dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
+  <div class="section-header p-4 bg-black text-white dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">About Me</h2>
   </div>
   <div class="p-4 lg:p-0 space-y-8 section-content">
@@ -134,7 +134,7 @@
 </section>
 
 <section id="experience" class="space-y-8 section-container">
-  <div class="section-header p-4 dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
+  <div class="section-header p-4 bg-black text-white dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">My Experiences</h2>
   </div>
   <div class="section-content">
@@ -160,7 +160,7 @@
 </section>
 
 <section id="project" class="section-container">
-  <div class="section-header p-4 dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
+  <div class="section-header p-4 bg-black text-white dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">My Projects</h2>
   </div>
   <div class="section-content">
@@ -173,7 +173,7 @@
 </section>
 
 <section id="contact" class="section-container">
-  <div class="section-header p-4 dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
+  <div class="section-header p-4 bg-black text-white dark:bg-[#2d2d2d] md:rounded-md lg:hidden">
     <h2 class="uppercase font-bold">Contact Me</h2>
   </div>
   <form

@@ -3,6 +3,7 @@
   import Icon from "@iconify/svelte";
   import { onMount } from "svelte";
   import Toast from "$lib/components/Toast.svelte";
+  import Switch from "$lib/components/Switch.svelte";
 
   const icons = [
     {
@@ -29,11 +30,11 @@
       tag: "#about",
     },
     {
-      name: "Experience",
+      name: "Experiences",
       tag: "#experience",
     },
     {
-      name: "Project",
+      name: "Projects",
       tag: "#project",
     },
     {
@@ -82,6 +83,7 @@
   });
 </script>
 
+<Switch />
 <Toast />
 <main
   class="flex flex-col lg:flex-row items-center gap-16 xl:gap-4 justify-between w-full h-screen md:px-8 md:py-8 xl:px-20 xl:py-20"
