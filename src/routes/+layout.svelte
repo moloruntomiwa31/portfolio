@@ -120,7 +120,9 @@
         >
           <span
             class="absolute left-0 top-1/2 -translate-y-1/2 h-[2px] rounded-md dark:bg-neutral-400 transition-all duration-300 group-hover:w-6
-          {activeSection === link.tag.slice(1) ? 'w-6 bg-black dark:bg-white' : 'w-4 bg-[#888]'}"
+          {activeSection === link.tag.slice(1)
+              ? 'w-6 bg-black dark:bg-white'
+              : 'w-4 bg-[#888]'}"
           ></span>
           {link.name}
         </a>
@@ -151,3 +153,27 @@
     </div>
   </div>
 </main>
+
+<!-- //backgrounds - mobile & desktop
+//desktop -->
+<div class="absolute inset-0 w-full h-full z-[-1] hidden lg:block">
+  <img src="/bg.svg" alt="under-cover" class="w-full h-full object-cover" />
+</div>
+<!-- //mobile -->
+<div class="fixed inset-0 w-full h-full z-[-1] lg:hidden">
+  <img
+    src="/top-left.svg"
+    alt="under-cover"
+    class="absolute top-0 left-0 w-1/2 h-1/2 object-cover"
+  />
+  <img
+    src="/bottom-left.svg"
+    alt="under-cover"
+    class="absolute bottom-0 left-0 w-1/2 h-1/2 object-cover"
+  />
+  <img
+    src="/bottom-right.svg"
+    alt="under-cover"
+    class="absolute bottom-0 right-0 w-1/2 h-1/2 object-cover"
+  />
+</div>

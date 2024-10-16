@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,8 +6,9 @@
 body {
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
-  @apply dark:bg-[#000000f2] bg-neutral-100 transition-all duration-700
+  @apply dark:bg-[#000000f2] bg-white transition-all duration-700 lg:overflow-hidden overflow-auto;
 }
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
 }
