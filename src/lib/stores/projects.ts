@@ -11,6 +11,14 @@ export const projects = readable<Project[]>([
     urlPath: "https://devlinks-31.vercel.app/",
   },
   {
+    imagePath: "/nutri-lens-img.png",
+    title: "Nutri-Lens",
+    description:
+      "Nutri-lens is a cutting-edge nutritional assistant designed to revolutionize your health and meal planning journey! It provides personalized meal plans, recipes, and nutritional information.",
+    skillSets: ["Nuxt 3", "Typescript", "Firebase", "Gemini", "TailwindCSS"],
+    urlPath: "https://nutri-lens.vercel.app/",
+  },
+  {
     imagePath: "/kanban.png",
     title: "Kanban Task Manager",
     description:

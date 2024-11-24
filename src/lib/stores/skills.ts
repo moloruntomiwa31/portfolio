@@ -17,4 +17,5 @@ export const skills = readable<string[]>([
   "GitHub",
   "Firebase",
   "Vercel",
+  "Gemini",
 ]);

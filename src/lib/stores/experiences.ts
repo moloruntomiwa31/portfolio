@@ -22,7 +22,7 @@ export const experiences = readable<Experience[]>([
       "Pinia",
       "Firebase",
       "Vercel",
-      "Gemini AI",
+      "Gemini",
     ],
     path: "https://ag-glowsense.vercel.app/",
   },

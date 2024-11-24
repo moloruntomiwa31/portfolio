@@ -3,7 +3,7 @@
   import Icon from "@iconify/svelte";
   import { onMount } from "svelte";
   import Toast from "$lib/components/Toast.svelte";
-  import Switch from "$lib/components/Switch.svelte";
+  // import Switch from "$lib/components/Switch.svelte";
 
   const icons = [
     {
@@ -22,6 +22,10 @@
       iconName: "akar-icons:tiktok-fill",
       path: "https://www.tiktok.com/@moloruntomiwa31",
     },
+    {
+      iconName: "ic:sharp-whatsapp",
+      path: "https://wa.me/message/6CDKR64EPE7MH1 "
+    }
   ];
 
   const pageLinks = [
@@ -83,7 +87,7 @@
   });
 </script>
 
-<Switch />
+<!-- <Switch /> -->
 <Toast />
 <main
   class="flex flex-col lg:flex-row items-center gap-16 xl:gap-4 justify-between w-full h-screen md:px-8 md:py-8 xl:px-20 xl:py-20"
@@ -115,8 +119,8 @@
           href={link.tag}
           class="group relative pl-8 uppercase transition-all duration-300 {activeSection ===
           link.tag.slice(1)
-            ? 'font-extrabold dark:text-white'
-            : 'font-medium text-[#414141] dark:text-neutral-400'}"
+            ? 'font-[1000] dark:text-white'
+            : 'font-normal text-[#414141] dark:text-neutral-400'}"
         >
           <span
             class="absolute left-0 top-1/2 -translate-y-1/2 h-[2px] rounded-md dark:bg-neutral-400 transition-all duration-300 group-hover:w-6
