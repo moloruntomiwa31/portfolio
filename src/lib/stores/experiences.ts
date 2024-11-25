@@ -14,7 +14,7 @@ export const experiences = readable<Experience[]>([
     date: "June 2023 - Present",
     title: "Frontend Developer, AG GLOWSENSE",
     description:
-      "AG-GLOWSENSE is a beauty, cosmetics, and skincare company specializing in delivering high-quality products. I developed and I am maintaining the full-stack e-commerce platform, focusing on optimizing frontend performance and responsiveness. I also implemented secure user authentication and data storage, while integrating the Gemini AI Chat Assistant to improve customer support.",
+      "AG-GLOWSENSE is a beauty, cosmetics, and skincare company specializing in delivering high-quality products. I developed and I am maintaining the full-stack e-commerce platform, focusing on optimizing frontend performance and responsiveness. I also implemented secure user authentication and data storage, while integrating the Gemini Chat Assistant to improve customer support.",
     badges: [
       "Vuejs",
       "JavaScript",

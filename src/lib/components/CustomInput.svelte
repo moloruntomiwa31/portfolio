@@ -26,6 +26,6 @@
   {placeholder}
   {name}
   on:input={handleInput}
-  class="bg-black dark:bg-[#2d2d2d] text-white outline-none rounded-tl-lg rounded-br-lg p-4 w-full transition focus:shadow-sm focus:shadow-[#888] placeholder:text-neutral-50 dark:placeholder:text-neutral-500:font-light"
+  class="bg-black dark:bg-[#2d2d2d] text-white outline-none rounded-tl-lg rounded-br-lg p-4 w-full transition focus:shadow-sm focus:shadow-[#888] placeholder:text-neutral-50 dark:placeholder:text-neutral-500 font-light"
   bind:this={inputElement}
 />
