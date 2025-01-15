@@ -1,10 +1,13 @@
 <script lang="ts">
   // your script goes here
-  export let content: string = "Badge";
+  import Icon from "@iconify/svelte";
+  import type SkillSet from "$lib/types/SkillSet";
+
+  export let content: SkillSet;
+  export let size: string = "30";
 </script>
 
-<div
-  class="flex items-center justify-center rounded-3xl text-sm font-medium badge min-w-fit p-2 text-white bg-black hover:bg-[#2d2d2d] dark:bg-[#2d2d2d] dark:text-[#888] dark:hover:bg-white dark:hover:text-black transition"
->
-  {content}
+<div class="flex md:justify-start  flex-col">
+  <Icon icon={content.icon} width={size} height={size} />
+  <p class="text-center text-xs dark:text-[#888]">{content.skillName}</p>
 </div>

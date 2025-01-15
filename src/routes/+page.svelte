@@ -123,10 +123,10 @@
     <div class="tools space-y-4">
       <h3 class="font-bold">Tools and Languages</h3>
       <div
-        class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-3 xl:grid-cols-5 gap-3"
+        class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-3 xl:grid-cols-6 gap-3"
       >
         {#each $skills as badge}
-          <Badge content={badge} />
+          <Badge content={badge} size={'36'} />
         {/each}
       </div>
     </div>

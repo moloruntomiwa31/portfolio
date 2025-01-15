@@ -108,7 +108,7 @@
         />
       </h3>
       <p class="dark:text-[#888] text-sm font-light">
-        Passionate web developer with <span class="font-bold">1+</span> year of experience
+        Passionate web developer with <span class="font-bold text-lg">1+</span> year of experience
         to build all aspects of the user experience and interface for client-facing
         landing pages and websites.
       </p>
