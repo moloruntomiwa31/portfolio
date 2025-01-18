@@ -108,11 +108,7 @@ export const projects = readable<Project[]>([
         skillName: "TailwindCSS",
       },
       {
-        icon: "logos:javascript",
-        skillName: "Fake Api",
-      },
-      {
-        icon: "logos:apexcharts",
+        icon: "logos:highcharts",
         skillName: "ApexCharts",
       },
     ],

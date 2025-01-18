@@ -6,10 +6,10 @@
 </script>
 
 <div
-  class="card flex flex-col lg:flex-row items-start transition cursor-pointer p-4 rounded-md lg:hover:shadow-sm lg:hover:shadow-[#888] group"
+  class="card flex flex-col lg:flex-row items-start transition cursor-pointer p-4 rounded-md group"
 >
   <div class="date mt-[-3px] lg:w-1/3">
-    <span class="dark:text-[#888] uppercase text-xs">{content.date}</span>
+    <span class="dark:text-[#888] dark:group-hover:text-white transition uppercase text-xs">{content.date}</span>
   </div>
   <div class="content space-y-4 lg:w-2/3">
     <div class="flex items-center gap-1">
@@ -24,7 +24,7 @@
     <p class="text-sm dark:text-[#888] dark:group-hover:text-white transition">
       {content.description}
     </p>
-    <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-3 gap-3">
+    <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-4 gap-3">
       {#each content.badges as badge}
         <Badge content={badge} />
       {/each}

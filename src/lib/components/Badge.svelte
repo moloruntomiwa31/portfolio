@@ -4,7 +4,7 @@
   import type SkillSet from "$lib/types/SkillSet";
 
   export let content: SkillSet;
-  export let size: string = "30";
+  export let size: string = "18";
 </script>
 
 <div class="flex md:justify-start  flex-col">
