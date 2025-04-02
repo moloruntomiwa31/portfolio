@@ -126,7 +126,7 @@
         class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-3 xl:grid-cols-6 gap-3"
       >
         {#each $skills as badge}
-          <Badge content={badge} size={'25'} />
+          <Badge content={badge} size={'26'} />
         {/each}
       </div>
     </div>
