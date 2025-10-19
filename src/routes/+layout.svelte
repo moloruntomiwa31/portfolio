@@ -5,7 +5,7 @@
   import Toast from "$lib/components/Toast.svelte";
   // import Switch from "$lib/components/Switch.svelte";
 
-  const icons = [
+  const socialMediaPages = [
     {
       iconName: "ri:github-fill",
       path: "https://github.com/moloruntomiwa31",
@@ -20,7 +20,7 @@
     },
     {
       iconName: "akar-icons:tiktok-fill",
-      path: "https://www.tiktok.com/@moloruntomiwa31",
+      path: "https://www.tiktok.com/@luv_oloruntomiwa",
     },
     {
       iconName: "ic:sharp-whatsapp",
@@ -138,7 +138,7 @@
       {/each}
     </div>
     <div class="flex items-center gap-4">
-      {#each icons as icon}
+      {#each socialMediaPages as icon}
         <a href={icon.path}>
           <Icon
             icon={icon.iconName}

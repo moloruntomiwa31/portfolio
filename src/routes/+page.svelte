@@ -15,7 +15,7 @@
 
   const title: string = "Aderibigbe Michael O.";
   const description: string =
-    "Innovative Frontend Developer with expertise in Vue.js. Enhancing user experiences and optimizing web performance. Skilled in developing responsive designs and resolving complex code issues. Implemented cutting-edge solutions, demonstrating technical proficiency and problem-solving abilities.";
+    "Innovative Frontend Developer with expertise in Vue.js & React.js. Enhancing user experiences and optimizing web performance. Skilled in developing responsive designs and resolving complex code issues. Implemented cutting-edge solutions, demonstrating technical proficiency and problem-solving abilities.";
 
     //contact & sendMail
   let emailInput: string = "";
