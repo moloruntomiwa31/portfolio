@@ -95,7 +95,7 @@
 <!-- <Switch /> -->
 <Toast />
 <main
-  class="flex flex-col lg:flex-row items-center gap-16 xl:gap-4 justify-between w-full h-screen md:px-8 md:py-8 xl:px-20 xl:py-20"
+  class="flex flex-col lg:flex-row items-center gap-16 xl:gap-4 justify-between w-full h-screen md:px-8 md:py-8 xl:px-20 xl:py-20 max-w-[1440px] mx-auto"
 >
   <div
     class="dark:text-white h-full space-y-6 px-4 lg:w-2/5 xl:space-y-14 pt-6"
