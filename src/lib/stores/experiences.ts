@@ -3,6 +3,47 @@ import { readable } from "svelte/store";
 
 export const experiences = readable<Experience[]>([
   {
+    date: "October - November 2025",
+    title: "Frontend Developer, HNG Internship",
+    description:
+      "Participated in the HNG internship program, gaining hands-on experience in frontend development. Worked on real-world projects, collaborated with cross-functional teams, and enhanced skills in modern web development technologies and best practices.",
+    badges: [
+      {
+        icon: "logos:javascript",
+        skillName: "JavaScript",
+      },
+      {
+        icon: "logos:react",
+        skillName: "React",
+      },
+      {
+        icon: "logos:nextjs-icon",
+        skillName: "Next.js",
+      },
+      {
+        icon: "logos:typescript-icon",
+        skillName: "TypeScript",
+      },
+      {
+        icon: "logos:vue",
+        skillName: "Vue.js",
+      },
+      {
+        icon: "logos:tailwindcss-icon",
+        skillName: "TailwindCSS",
+      },
+      {
+        icon: "logos:html-5",
+        skillName: "HTML5",
+      },
+      {
+        icon: "logos:css-3",
+        skillName: "CSS3",
+      },
+    ],
+    path: "https://hng.tech",
+  },
+  {
     date: "May 2024 - Present",
     title: "Frontend Developer, Stranerd",
     description:

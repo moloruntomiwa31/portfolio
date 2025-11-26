@@ -3,6 +3,39 @@ import { readable } from "svelte/store";
 
 export const projects = readable<Project[]>([
 	{
+		imagePath: "/audiophile-img.png",
+		title: "Audiophile",
+		description:
+			"Premium audio equipment e-commerce platform offering high-quality headphones, speakers, and earphones with seamless shopping experience and secure checkout.",
+		skillSets: [
+			{
+				icon: "logos:nextjs-icon",
+				skillName: "Next.js",
+			},
+			{
+				icon: "logos:typescript-icon",
+				skillName: "TypeScript",
+			},
+			{
+				icon: "devicon:zustand",
+				skillName: "Zustand",
+			},
+			// {
+			// 	icon: "simple-icons:convex",
+			// 	skillName: "Convex",
+			// },
+			// {
+			// 	icon: "logos:nodemailer",
+			// 	skillName: "Nodemailer",
+			// },
+			{
+				icon: "logos:tailwindcss-icon",
+				skillName: "TailwindCSS",
+			},
+		],
+		urlPath: "https://audiophile-31.vercel.app/",
+	},
+	{
 		imagePath: "/devlinks-img.png",
 		title: "Devlinks",
 		description:
@@ -85,31 +118,6 @@ export const projects = readable<Project[]>([
 		],
 		urlPath: "https://react-kanban-two-lovat.vercel.app/",
 	},
-	// {
-	// 	imagePath: "/dashboard-img.png",
-	// 	title: "Dashboard Clone",
-	// 	description:
-	// 		"An e-commerce dashboard clone displaying data analytics and product details using charts. Includes a theme switcher for an enhanced user experience.",
-	// 	skillSets: [
-	// 		{
-	// 			icon: "logos:nuxt-icon",
-	// 			skillName: "Nuxt.js",
-	// 		},
-	// 		{
-	// 			icon: "simple-icons:shadcnui",
-	// 			skillName: "ShadCNUI",
-	// 		},
-	// 		{
-	// 			icon: "logos:tailwindcss-icon",
-	// 			skillName: "TailwindCSS",
-	// 		},
-	// 		{
-	// 			icon: "logos:highcharts",
-	// 			skillName: "ApexCharts",
-	// 		},
-	// 	],
-	// 	urlPath: "https://dashboard-clone-delta.vercel.app/",
-	// },
 	{
 		imagePath: "/cinemax-img.png",
 		title: "Cinemax",

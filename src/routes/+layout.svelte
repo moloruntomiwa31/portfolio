@@ -3,7 +3,8 @@
   import Icon from "@iconify/svelte";
   import { onMount } from "svelte";
   import Toast from "$lib/components/Toast.svelte";
-  // import Switch from "$lib/components/Switch.svelte";
+  import ThemeToggle from "$lib/components/ThemeToggle.svelte";
+  import { theme } from "$lib/stores/theme";
 
   const socialMediaPages = [
     {
@@ -72,6 +73,8 @@
   };
 
   onMount(() => {
+    document.documentElement.classList.toggle('dark', $theme === 'dark');
+    
     initializeObserver();
 
     const handleResize = () => {
@@ -92,8 +95,10 @@
   };
 </script>
 
-<!-- <Switch /> -->
 <Toast />
+<div class="fixed top-6 md:top-4 right-4 md:right-16 z-50">
+  <ThemeToggle />
+</div>
 <main
   class="flex flex-col lg:flex-row items-center gap-16 xl:gap-4 justify-between w-full h-screen md:px-8 md:py-8 xl:px-20 xl:py-20 max-w-[1440px] mx-auto"
 >
