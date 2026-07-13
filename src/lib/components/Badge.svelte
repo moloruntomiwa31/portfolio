@@ -1,13 +1,12 @@
 <script lang="ts">
-  // your script goes here
   import Icon from "@iconify/svelte";
   import type SkillSet from "$lib/types/SkillSet";
 
   export let content: SkillSet;
-  export let size: string = "18";
+  export let size: string = "16";
 </script>
 
-<div class="flex md:justify-start  flex-col">
+<div class="skill-pill">
   <Icon icon={content.icon} width={size} height={size} />
-  <p class="text-center text-xs dark:text-[#888]">{content.skillName}</p>
+  <span>{content.skillName}</span>
 </div>

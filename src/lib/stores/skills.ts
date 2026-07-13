@@ -6,6 +6,7 @@ export const skills = readable<SkillSet[]>([
 	{ icon: "logos:nuxt-icon", skillName: "Nuxt.js" },
 	{ icon: "logos:pinia", skillName: "Pinia" },
 	{ icon: "material-icon-theme:react-ts", skillName: "React.js" },
+	{ icon: "logos:nextjs-icon", skillName: "Next.js" },
 	// { icon: "logos:svelte-icon", skillName: "Svelte.js" },
 	{ icon: "devicon:nodejs", skillName: "Node.js" },
 	{ icon: "skill-icons:expressjs-light", skillName: "Express.js" },

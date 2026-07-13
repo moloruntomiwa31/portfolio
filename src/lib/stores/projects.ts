@@ -3,6 +3,31 @@ import { readable } from "svelte/store";
 
 export const projects = readable<Project[]>([
 	{
+		imagePath: "/railswitch-img.png",
+		title: "RailSwitch",
+		description:
+			"A full-stack SaaS platform featuring a multi-tenant dashboard and client-facing portal. Includes secure authentication flows, role-based access control, and real-time data management built with a modern monorepo architecture.",
+		skillSets: [
+			{
+				icon: "material-icon-theme:react-ts",
+				skillName: "React.js",
+			},
+			{
+				icon: "logos:nextjs-icon",
+				skillName: "Next.js",
+			},
+			{
+				icon: "logos:typescript-icon",
+				skillName: "TypeScript",
+			},
+			{
+				icon: "simple-icons:shadcnui",
+				skillName: "ShadCN UI",
+			},
+		],
+		urlPath: "https://github.com/moloruntomiwa31",
+	},
+	{
 		imagePath: "/audiophile-img.png",
 		title: "Audiophile",
 		description:
@@ -20,14 +45,6 @@ export const projects = readable<Project[]>([
 				icon: "devicon:zustand",
 				skillName: "Zustand",
 			},
-			// {
-			// 	icon: "simple-icons:convex",
-			// 	skillName: "Convex",
-			// },
-			// {
-			// 	icon: "logos:nodemailer",
-			// 	skillName: "Nodemailer",
-			// },
 			{
 				icon: "logos:tailwindcss-icon",
 				skillName: "TailwindCSS",
