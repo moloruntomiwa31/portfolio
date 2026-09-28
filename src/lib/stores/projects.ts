@@ -3,6 +3,35 @@ import { readable } from "svelte/store";
 
 export const projects = readable<Project[]>([
 	{
+		imagePath: "/mathbridge-screenshot.png",
+		title: "Mathbridge Edutech Website",
+		description:
+			"An interactive educational platform for Mathbridge Academy, delivering dynamic STEM learning programs, course showcases, engaging micro-animations, and direct student inquiry and enrollment flows.",
+		skillSets: [
+			{
+				icon: "logos:nextjs-icon",
+				skillName: "Next.js",
+			},
+			{
+				icon: "logos:tailwindcss-icon",
+				skillName: "TailwindCSS",
+			},
+			{
+				icon: "logos:framer",
+				skillName: "Framer Motion",
+			},
+			{
+				icon: "simple-icons:lucide",
+				skillName: "Lucide React",
+			},
+			{
+				icon: "carbon:email",
+				skillName: "EmailJS",
+			},
+		],
+		urlPath: "https://www.mathbridgeacademy.org",
+	},
+	{
 		imagePath: "/railswitch-img.png",
 		title: "RailSwitch",
 		description:
@@ -136,45 +165,28 @@ export const projects = readable<Project[]>([
 		urlPath: "https://react-kanban-two-lovat.vercel.app/",
 	},
 	{
-		imagePath: "/cinemax-img.png",
-		title: "Cinemax",
+		imagePath: "/fta-project-img.png",
+		title: "Fundamental Theorem of Arithmetic (FTA) Computational Study",
 		description:
-			"A movie app where users can discover trending movies and series, watch trailers, and search for specific titles to get detailed information.",
+			"My final year research project analyzing trial division algorithms for integer prime factorization. Implements four algorithmic variants (Basic, Odd-Only, 6k±1, and Prime-Only with Sieve), deterministic Miller-Rabin primality testing, and performance benchmarks across structured integer datasets.",
 		skillSets: [
 			{
-				icon: "logos:vue",
-				skillName: "Vue.js",
+				icon: "logos:python",
+				skillName: "Python",
 			},
 			{
-				icon: "logos:typescript-icon",
-				skillName: "Typescript",
+				icon: "devicon:matplotlib",
+				skillName: "Matplotlib",
 			},
 			{
-				icon: "logos:pinia",
-				skillName: "Pinia",
+				icon: "logos:numpy",
+				skillName: "NumPy",
 			},
 			{
-				icon: "logos:tailwindcss-icon",
-				skillName: "TailwindCSS",
+				icon: "carbon:function-math",
+				skillName: "Algorithms",
 			},
 		],
-		urlPath: "https://cinemax-31.vercel.app/",
-	},
-	{
-		imagePath: "/bookmark-img.png",
-		title: "Bookmark Landing Page",
-		description:
-			"A minimalist landing page for a bookmarking app, designed for simplicity and ease of use.",
-		skillSets: [
-			{
-				icon: "logos:svelte-icon",
-				skillName: "Svelte.js",
-			},
-			{
-				icon: "logos:tailwindcss-icon",
-				skillName: "TailwindCSS",
-			},
-		],
-		urlPath: "https://bookmark-landing-blush.vercel.app/",
+		urlPath: "https://github.com/moloruntomiwa31/FTA-PROJECT",
 	},
 ]);

@@ -11,9 +11,9 @@
   import emailjs from "@emailjs/browser";
   import ogImage from "../../static/ogImage.png";
 
-  const title = "Aderibigbe Michael O. — Frontend Developer";
+  const title = "Aderibigbe Michael O. | Frontend Developer";
   const description =
-    "Frontend Developer specializing in Vue.js, React.js, and Next.js. Building high-performance, accessible web experiences with 3+ years of hands-on experience. Currently at Stranerd, delivering modern edu-tech solutions.";
+    "Frontend Developer specializing in Vue.js, React.js, and Next.js, with a growing interest in machine learning and AI. Building high-performance, accessible web experiences with 3+ years of hands-on experience.";
 
   // Contact form
   let emailInput = "";
@@ -86,7 +86,7 @@
     },
     {
       label: "Languages",
-      skills: $skills.filter(s => ["JavaScript","TypeScript","HTML5","CSS3","SCSS"].includes(s.skillName)),
+      skills: $skills.filter(s => ["JavaScript","TypeScript","Python","HTML5","CSS3","SCSS"].includes(s.skillName)),
     },
     {
       label: "Tools & Platforms",
@@ -98,6 +98,7 @@
 <svelte:head>
   <title>{title}</title>
   <meta name="description" content={description} />
+  <link rel="icon" type="image/jpeg" href="/oloruntomiwa-headshot.jpeg" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={ogImage} />
@@ -126,17 +127,20 @@
       style="background: radial-gradient(circle, #6366f1, transparent);">
     </div>
     <p class="text-[0.92rem] leading-[1.85] text-slate-400">
-      Hey, I'm <span class="text-slate-200 font-semibold">Michael</span> — a frontend developer from Lagos. 
+      Hey, I'm <span class="text-slate-200 font-semibold">Michael</span>, a frontend developer from Lagos. 
       I've spent the past few years building things for the web, mostly with 
       <span class="text-indigo-300">Vue.js</span> and <span class="text-indigo-300">React</span>,
       though I'm pretty comfortable jumping between whatever the project needs.
     </p>
     <p class="text-[0.92rem] leading-[1.85] text-slate-400">
-      Right now I'm working at <span class="text-slate-300 font-medium">Stranerd</span>, an edu-tech startup where I mostly deal with
-      the frontend — components, performance, integrations, that kind of thing.
+      Right now I'm working at <span class="text-slate-300 font-medium">Stranerd</span>, an edutech startup where I focus on
+      the frontend, creating web components, optimizing performance, and handling integrations.
     </p>
     <p class="text-[0.92rem] leading-[1.85] text-slate-400">
-      Outside work I make content on TikTok, I'm a Photographer and Creative, keep tabs on what's new in the JS ecosystem, and occasionally get way too deep into UI details that most people never notice.
+      Alongside frontend engineering, I have a growing interest in <span class="text-indigo-300">machine learning and AI</span>, exploring how intelligent models and data-driven algorithms can be woven into intuitive user experiences.
+    </p>
+    <p class="text-[0.92rem] leading-[1.85] text-slate-400">
+      Outside work I create content on TikTok, shoot photography, explore creative design, and occasionally get deep into UI details that most people never notice.
     </p>
   </div>
 
@@ -178,7 +182,7 @@
 
   <!-- View Resume CTA -->
   <a
-    href={import.meta.env.VITE_RESUME_LINK}
+    href={import.meta.env.VITE_RESUME_LINK || "https://drive.google.com/file/d/1XaL4hxL3Z7qs8Jh19suXbu1cNaVCNVDZ/view?usp=sharing"}
     target="_blank"
     rel="noopener noreferrer"
     class="inline-flex items-center gap-2 group"

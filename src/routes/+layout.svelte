@@ -136,10 +136,10 @@
       <!-- Avatar + Status -->
       <div class="flex items-center gap-4">
         <div class="relative">
-          <div class="w-[68px] h-[68px] rounded-2xl overflow-hidden border border-white/10 glow-primary">
-            <img src="/oloruntomiwa.png" alt="Aderibigbe Michael" class="w-full h-full object-cover object-top" />
+          <div class="w-[68px] h-[68px] rounded-full overflow-hidden border border-white/10 glow-primary">
+            <img src="/oloruntomiwa-headshot.jpeg" alt="Aderibigbe Michael" class="w-full h-full object-cover object-top" />
           </div>
-          <div class="absolute -bottom-1 -right-1 status-dot"></div>
+          <div class="absolute bottom-0 right-0 status-dot ring-2 ring-[#050811]"></div>
         </div>
         <div>
           <p class="text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-indigo-400/80 mb-1">Available for work</p>
@@ -150,12 +150,11 @@
       <!-- Name & Title -->
       <div class="space-y-2.5">
         <h1 class="font-display text-[2.1rem] xl:text-[2.5rem] leading-[1.15] text-white">
-          Aderibigbe<br/>
-          <span class="text-gradient">Michael O.</span>
+          Aderibigbe <span class="text-gradient ">Michael O.</span>
         </h1>
         <div class="flex items-center gap-2">
           <div class="h-px w-6 bg-indigo-500/60"></div>
-          <p class="text-[0.82rem] font-medium text-slate-400 tracking-wide">Frontend Developer</p>
+          <p class="text-[0.82rem] font-medium text-slate-400 tracking-wide italic">Frontend Developer</p>
         </div>
       </div>
 

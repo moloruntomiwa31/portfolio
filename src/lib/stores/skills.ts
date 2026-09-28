@@ -16,6 +16,7 @@ export const skills = readable<SkillSet[]>([
 	{ icon: "simple-icons:shadcnui", skillName: "ShadCNUI" },
 	{ icon: "logos:javascript", skillName: "JavaScript" },
 	{ icon: "logos:typescript-icon", skillName: "TypeScript" },
+	{ icon: "logos:python", skillName: "Python" },
 	{ icon: "logos:html-5", skillName: "HTML5" },
 	{ icon: "logos:css-3", skillName: "CSS3" },
 	{ icon: "vscode-icons:file-type-scss2", skillName: "SCSS" },
